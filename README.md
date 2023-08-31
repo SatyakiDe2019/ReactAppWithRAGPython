@@ -89,3 +89,4 @@ Note that the debug indicator is set to "Y". This will generate logs. If you cha
 - To view more on the OpenAI, check out this [OpenAI Official Page](https://platform.openai.com/examples).
 - To view more on the Haystack, check out this [Haystack Official Page](https://docs.haystack.deepset.ai/docs).
 - To view more on the React, check out this [React Official Page](https://react.dev/reference/react).
+- For this use case, we've used this open-source brilliant website API, which provides a lot of information free. We've used this as source for education purpose only to demonstrate how one can feed the RAG context to your OpenAI source & get the quick, less-expensive & better response. To view more on the The Metropolitan Museum of Art Collection API, check out this [React Official Page](https://metmuseum.github.io/#objects). 
