@@ -54,7 +54,7 @@ Compiled successfully!
 You can now view my-app in the browser.
 
   Local:            http://localhost:3001/
-  On Your Network:  http://192.168.1.10:3001/
+  On Your Network:  http://102.68.1.10:3001/
 
 Note that the development build is not optimized.
 To create a production build, use npm run build.
