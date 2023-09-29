@@ -1,12 +1,11 @@
 #########################################################
 #### Written By: SATYAKI DE                          ####
 #### Written On: 27-Jun-2023                         ####
-#### Modified On 28-Jun-2023                         ####
+#### Modified On 28-Sep-2023                         ####
 ####                                                 ####
-#### Objective: This is the main calling             ####
-#### python script that will invoke the              ####
-#### shortcut application created inside MAC         ####
-#### enviornment including MacBook, IPad or IPhone.  ####
+#### Objective: This is the main calling class       ####
+#### that will create the documents based on the     ####
+#### supplied historical files.                      ####
 ####                                                 ####
 #########################################################
 
@@ -104,10 +103,6 @@ class clsCreateList:
             country = row['country']
             artistNationality = row['artistNationality']
             creditLine = row['creditLine']
-            #artist_URL = row['artist_URL_hashed']
-            #object_URL = row['object_URL_hashed']
-            #primaryImage = row['primaryImage']
-            #Wiki_URL = row['Wiki_URL_hashed']
             totalHash = row['Total_Hash']
 
             if (accessionYear is None):
@@ -170,23 +165,7 @@ class clsCreateList:
             else:
                 textPart_12 = "Ref: {'" + str(totalHash) + "'}"
 
-            #if (artist_URL is None):
-                #textPart_12 = "For an in-depth exploration of the artifact, one can read it from Wiki based on the avability."
-            #else:
-                #textPart_12 = "For an in-depth exploration of the artifact and its creator, visit the following Website: {" + str(artist_URL) + "}"
-
-            #if (primaryImage is None):
-                #textPart_13 = "."
-            #else:
-                #textPart_13 = ", and view its Image: {" + str(primaryImage) + "}"
-
-            #if (Wiki_URL is None):
-                #textPart_14 = "at this moment there is no authentic source or website available on this topic."
-            #else:
-                #textPart_14 = "with further information at - Wiki: {" + str(Wiki_URL) + "}"
-
             prompt = f"{textPart_1} {department} {textPart_2} {textPart_3} {textPart_4}, titled '{title}'. {textPart_5} {textPart_6}, {textPart_7} {textPart_8} {textPart_9} {textPart_10}. {textPart_11}. {textPart_12}"
-            #prompt = f"{textPart_1} {department} {textPart_2} {textPart_3} {textPart_4}, titled '{title}'. {textPart_5} {textPart_6}, {textPart_7} {textPart_8} {textPart_9} {textPart_10}. {textPart_11}. {textPart_12} {textPart_13}. Additionally, the {title} is available in the public domain, {textPart_14}"
 
             return prompt
 
@@ -227,7 +206,6 @@ class clsCreateList:
             dfFin.drop(['URL'], axis=1, inplace=True)
 
             # Save the filtered DataFrame to a new CSV file
-            #clog.logr(cleanedFile, Ind, dfFin, subdir)
             res = self.addHash(dfFin)
 
             if res == 0:
