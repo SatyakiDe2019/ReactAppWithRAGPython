@@ -1,12 +1,14 @@
 #########################################################
 #### Written By: SATYAKI DE                          ####
 #### Written On: 27-Jun-2023                         ####
-#### Modified On 28-Jun-2023                         ####
+#### Modified On 28-Sep-2023                         ####
 ####                                                 ####
 #### Objective: This is the main calling             ####
 #### python script that will invoke the              ####
-#### shortcut application created inside MAC         ####
-#### enviornment including MacBook, IPad or IPhone.  ####
+#### class that call the musuem API in parallel      ####
+#### and, then filter with the right attributes &    ####
+#### finally, merge them into single historical csv  ####
+#### file.                                           ####
 ####                                                 ####
 #########################################################
 
