@@ -28,7 +28,19 @@ Install the requirements:
 pip install -r requirements.txt
 ```
 
-Run the Restricted-API:
+To, run the API to create one-time Historical File -
+
+```bash
+python 1_ReadMuseumJSON.py
+```
+
+To, feed the data into Haystack Framework (Vector DB), one needs to use the following commands -
+
+```bash
+python 2_feedVectorDB.py
+```
+
+Now, to run the Restricted-API (RAG Solution):
 
 ```bash
 python flaskServer.py
