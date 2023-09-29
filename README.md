@@ -90,6 +90,10 @@ Install the above requirements.
 
 Note that the debug indicator is set to "Y". This will generate logs. If you change this to 'N'. No logs will be generated. However, the process will be faster.
 
+## Model Contextualization
+
+![RAG-Model.GIF](RAG-Model.GIF)
+
 ## Screenshots
 
 ![demo.GIF](demo.GIF)
